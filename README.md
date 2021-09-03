@@ -1,5 +1,5 @@
 # Kokoa Clone 2021 Lecture.
 
-It's my first HTML CSS
+Test Text
 
-CSS got so much better!
+HTML & CSS are so much fun!
