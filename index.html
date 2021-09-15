@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link href="css/styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,14 +25,20 @@
 
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to KoKoa Clone</h1>
-      <p class="welcome-header__text">If you have a KoKoa Account, log in with your email or phone number</p>
+      <p class="welcome-header__text">
+        If you have a KoKoa Account, log in with your email or phone number
+      </p>
     </header>
 
-    <form>
-      <input type="text" placeholder="Email or phone number"/>
-      <inpu type="password" placeholder="Password" />
-      <input type="submit"
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log in" />
+      <input type="submit" value="Sign Up" />
+      <!-- or can use button-->
+      <a href="#">Find Kokoa Acount or Password</a>
     </form>
+
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
