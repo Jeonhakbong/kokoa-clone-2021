@@ -15,51 +15,103 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="playlist-bar">
-      <!--X Icon-->
-      <span>Playlist</span>
+    <div id="warningbox">
+      <span class="warning">Your screen is too wide:(</span>
     </div>
-    <div id="onplay-box">
-      <div><!--Album img--></div>
-      <div>
-        <span>Random Love</span>
-        <span>by Divay Kapoor</span>
-      </div>
-    </div>
-    <div id="btn-box">
-      <button type="button">Play</button>
-      <button type="button"><!--Heart Icon--></button>
-      <button type="button"><!--Plus Icon--></button>
-    </div>
-    <div id="musiclist-box">
-      <div class="musiclist-box__nextmusicinfo">
-        <div></div>
-        <div>
-          <span>Matargasti</span>
-          <span>Mohit Chaunhan</span>
+    <div id="mainbox">
+      <div id="playlist-bar">
+        <div class="playlist-bar__icon">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="playlist-bar__title">
+          <span>Playlist</span>
         </div>
       </div>
-      <div class="musiclist-box__nextmusicinfo">
-        <div></div>
-        <div>
-          <span>Matargasti</span>
-          <span>Mohit Chaunhan</span>
+
+      <div id="onplay-box">
+        <div class="onplay-box__album">
+          <img
+            class="onplay-box__album-img"
+            src="https://upload.wikimedia.org/wikipedia/en/e/e0/Imagine_Dragons_-_%22Amsterdam%22_%28Promotional_single%29.jpg"
+          />
+        </div>
+        <div class="onplay-box__album">
+          <span class="onplay-box__title">Amsterdam</span>
+          <span class="onplay-box__title">Imagind Dragons</span>
         </div>
       </div>
-      <div class="musiclist-box__nextmusicinfo">
-        <div></div>
-        <div>
-          <span>Matargasti</span>
-          <span>Mohit Chaunhan</span>
-        </div>
+
+      <div id="btn-box">
+        <button type="button" class="btn-box__button">
+          <i class="fas fa-play"></i>
+          <span>Play</span>
+        </button>
+        <button type="button" class="btn-box__button">
+          <i class="fas fa-heart"></i>
+        </button>
+        <button type="button" class="btn-box__button">
+          <i class="fas fa-plus"></i>
+        </button>
       </div>
-      <div class="musiclist-box__nextmusicinfo">
-        <div></div>
-        <div>
-          <span>Matargasti</span>
-          <span>Mohit Chaunhan</span>
-        </div>
-      </div>
+
+      <ul id="nextmusic-list">
+        <li class="nextmusic-list__info">
+          <div class="nextmusic-list__info-icon">
+            <img
+              class="nextmusic-list__info-icon-img"
+              src="https://w.namu.la/s/0617245209c297a1ec6ecfbfde7c16945fa17b02fe0065e8ca4453cea6128f5315d83af3aa20aebad3cc15d1626bc25e7943d30bc7b776bf381f839e40b31aa51ff6bfb2dd31d582f010f3ab155d45e9fe1c7a8a3a30779c144d61810d3df40d94802ff181f4a0bcd94d2ca7962a6591"
+            />
+          </div>
+          <div class="nextmusic-list__info-album">
+            <span class="nextmusic-list__info-album-title"
+              >Paris In The Rain</span
+            >
+            <span class="nextmusic-list__info-album-title">Lauv</span>
+          </div>
+        </li>
+        <li class="nextmusic-list__info">
+          <div class="nextmusic-list__info-icon">
+            <img
+              class="nextmusic-list__info-icon-img"
+              src="https://upload.wikimedia.org/wikipedia/en/e/e8/Paris_%28Official_Single_Cover%29_by_The_Chainsmokers.png"
+            />
+          </div>
+          <div class="nextmusic-list__info-album">
+            <span class="nextmusic-list__info-album-title">Paris</span>
+            <span class="nextmusic-list__info-album-title"
+              >The Chainsmokers</span
+            >
+          </div>
+        </li>
+        <li class="nextmusic-list__info">
+          <div class="nextmusic-list__info-icon">
+            <img
+              class="nextmusic-list__info-icon-img"
+              src="https://w.namu.la/s/f086fd470472049ecc0317580952c1ba127b827ef9614a91968c599abdfb6023446c700830b27e662026e53ade6cedcd69e3b976823c71683d8289d3777e31ac16ec122231688be8363b4d80fdd0c397c4442a4cbbc4c188375a75eb9dcc209db29cbb0a1dadc845b35185e622bc4e7a"
+            />
+          </div>
+          <div class="nextmusic-list__info-album">
+            <span class="nextmusic-list__info-album-title">Mood</span>
+            <span class="nextmusic-list__info-album-title">24KGoldn</span>
+          </div>
+        </li>
+        <li class="nextmusic-list__info">
+          <div class="nextmusic-list__info-icon">
+            <img
+              class="nextmusic-list__info-icon-img"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a5/Post_Malone_-_Circles.png"
+            />
+          </div>
+          <div class="nextmusic-list__info-album">
+            <span class="nextmusic-list__info-album-title">Circles</span>
+            <span class="nextmusic-list__info-album-title">Post Malone</span>
+          </div>
+        </li>
+      </ul>
     </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
