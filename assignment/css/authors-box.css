@@ -1,0 +1,28 @@
+#authors-box {
+  display: flex;
+}
+.authors-box__img {
+  margin: 15px;
+}
+.authors-box__img img {
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+}
+
+.author-box__text {
+  display: flex;
+  flex-direction: column;
+}
+.authors-box__text-info {
+  padding: 10px;
+  margin-top: 5px;
+}
+.authors-box__text-info:first-child span {
+  font-size: 25px;
+}
+.authors-box__text-info:last-child p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 20px;
+}
