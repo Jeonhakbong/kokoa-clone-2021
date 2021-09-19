@@ -1,0 +1,170 @@
+#chat-screen {
+  background-color: rgb(171, 193, 209);
+  height: 500vh;
+}
+#chat-screen .alt-header,
+#chat-screen #status-bar {
+  background-color: rgb(171, 193, 209);
+}
+#chat-screen .alt-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+#chat-screen #status-bar {
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.3s linear;
+}
+.chat__timestamp {
+  background-color: rgb(146, 164, 178);
+  color: rgb(218, 225, 229);
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: var(--main-border);
+  border-radius: 15px;
+  margin-right: 15px;
+}
+.message__author {
+  display: block;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.message__bubble {
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 12px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.meesage__time {
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.keyboard .keyboard__column:first-child {
+  width: 10%;
+}
+.keyboard .keyboard__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.keyboard input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.keyboard i {
+  opacity: 0.5;
+}
+.keyboard__column button i {
+  opacity: 1;
+}
+.keyboard__column:last-child > i,
+.keyboard__column:last-child button {
+  position: absolute;
+  right: -18px;
+  top: 4px;
+}
+.keyboard__column:last-child > i {
+  right: 20px;
+  top: 12px;
+}
+.keyboard__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.keyboard__column:last-child button i {
+  opacity: 1;
+}
+.keyboard__column button:focus,
+.keyboard__column button:active {
+  outline: none;
+}
+
+.keyboard:focus-within .keyboard__column:first-child,
+.keyboard:focus-within .fa-smile,
+.keyboard:focus-within button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.keyboard:focus-within .keyboard__column:first-child,
+.keyboard:focus-within .fa-smile,
+.keyboard:focus-within button {
+  opacity: 0;
+}
+
+.keyboard__column input:focus {
+  width: 90vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+
+.keyboard:focus-within {
+  transform: translateY(80px);
+}
