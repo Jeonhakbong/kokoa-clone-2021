@@ -18,12 +18,14 @@
   border-top: var(--main-border);
   padding-top: 15px;
 }
+
 .friends-screen__channel-header {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   color: var(--default-color);
 }
+
 @keyframes hideSplashScreen {
   from {
     opacity: 1;

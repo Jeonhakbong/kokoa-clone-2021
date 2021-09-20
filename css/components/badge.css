@@ -9,3 +9,10 @@
   border-radius: 15px;
   font-weight: 600;
 }
+.badge__alert {
+  position: absolute;
+  right: -6px;
+  top: -10px;
+  width: 6px;
+  height: 6px;
+}

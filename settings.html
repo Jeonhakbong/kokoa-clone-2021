@@ -11,7 +11,7 @@
   <body>
     <div id="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span>SKY</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
@@ -51,10 +51,60 @@
         <li class="settings__setting">
           <div class="settings__setting-column">
             <i class="fas fa-info-circle"></i><span>Version</span>
+            <div class="badge">N</div>
           </div>
           <div class="settings__setting-column">
-            <span>Latest Version</span>
+            <span>Update</span>
           </div>
+        </li>
+      </ul>
+
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-lock"></i><span>Privacy</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bell"></i><span>Notifications</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-user"></i><span>Friends</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-comment fa-2x"></i><span>Chats</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-adjust"></i><span>Display</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-paint-brush"></i><span>Themes</span>
+            <div class="badge">N</div>
+          </div>
+          <div class="settings__setting-column">
+            <span>Default Theme</span>
+          </div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-phone-alt"></i><span>Call</span>
+          </div>
+          <div class="settings__setting-column"></div>
         </li>
       </ul>
     </main>
@@ -73,13 +123,14 @@
           </a>
         </li>
         <li class="nav__btn">
-          <a clas="nav__link" href="find.html"
+          <a class="nav__link" href="find.html"
             ><i class="fas fa-search fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
-          <a clas="nav_link" href="more.html"
-            ><i class="fas fa-ellipsis-h fa-2x"></i>
+          <a class="nav__link" href="more.html">
+            <div class="badge__alert badge"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>
       </ul>

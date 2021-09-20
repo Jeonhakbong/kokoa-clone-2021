@@ -10,6 +10,19 @@
   margin-right: 20px;
   font-size: 22px;
 }
+.settings__setting-column {
+  display: flex;
+  align-items: center;
+}
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+.settings-list:first-child {
+  margin-bottom: 25px;
+}
+.settings__setting .badge {
+  margin-left: 15px;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
 }

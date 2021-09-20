@@ -33,60 +33,126 @@
         </div>
         <div class="artist-profile__btn">
           <button type="button" class="artist-profile__btn--playmode">
-            Shuffle
+            <span>Shuffle</span>
           </button>
           <button type="button" class="artist-profile__btn--like">
-            <!--heart icon-->
-            8,525,918
+            <i class="fas fa-heart"></i>
+            <span>8,525,918</span>
           </button>
         </div>
       </div>
 
-      <ul id="nextmusic-list">
+      <ul class="nextmusic-list-box">
         <li class="nextmusic-list__info">
-          <div class="nextmusic-list__info-icon">
-            <img class="nextmusic-list__info-icon-img" src="#" />
+          <div class="nextmusic-list__info-text">
+            <img class="nextmusic-list__info-text-img" src="../img/8.jpeg" />
+            <div class="nextmusic-list__info-album">
+              <span class="nextmusic-list__info-album-title">Lauv</span>
+              <span class="nextmusic-list__info-album-title"
+                >Paris In The Rain</span
+              >
+            </div>
           </div>
-          <div class="nextmusic-list__info-album">
-            <span class="nextmusic-list__info-album-title"
-              >Paris In The Rain</span
-            >
-            <span class="nextmusic-list__info-album-title">Lauv</span>
+          <div class="nextmusic-list__info-icon">
+            <i class="fas fa-ellipsis-v"></i>
           </div>
         </li>
         <li class="nextmusic-list__info">
-          <div class="nextmusic-list__info-icon">
-            <img class="nextmusic-list__info-icon-img" src="#" />
+          <div class="nextmusic-list__info-text">
+            <img class="nextmusic-list__info-text-img" src="../img/8.jpeg" />
+            <i class="fas fa-play"></i>
+            <div class="nextmusic-list__info-album">
+              <span class="nextmusic-list__info-album-title">Lauv</span>
+              <span class="nextmusic-list__info-album-title"
+                >Paris In The Rain</span
+              >
+            </div>
           </div>
-          <div class="nextmusic-list__info-album">
-            <span class="nextmusic-list__info-album-title">Paris</span>
-            <span class="nextmusic-list__info-album-title"
-              >The Chainsmokers</span
-            >
+          <div class="nextmusic-list__info-icon">
+            <i class="fas fa-ellipsis-v"></i>
           </div>
         </li>
         <li class="nextmusic-list__info">
-          <div class="nextmusic-list__info-icon">
-            <img class="nextmusic-list__info-icon-img" src="#" />
+          <div class="nextmusic-list__info-text">
+            <img class="nextmusic-list__info-text-img" src="../img/8.jpeg" />
+            <div class="nextmusic-list__info-album">
+              <span class="nextmusic-list__info-album-title">Lauv</span>
+              <span class="nextmusic-list__info-album-title"
+                >Paris In The Rain</span
+              >
+            </div>
           </div>
-          <div class="nextmusic-list__info-album">
-            <span class="nextmusic-list__info-album-title">Mood</span>
-            <span class="nextmusic-list__info-album-title">24KGoldn</span>
+          <div class="nextmusic-list__info-icon">
+            <i class="fas fa-ellipsis-v"></i>
           </div>
         </li>
         <li class="nextmusic-list__info">
-          <div class="nextmusic-list__info-icon">
-            <img class="nextmusic-list__info-icon-img" src="#" />
+          <div class="nextmusic-list__info-text">
+            <img class="nextmusic-list__info-text-img" src="../img/8.jpeg" />
+            <div class="nextmusic-list__info-album">
+              <span class="nextmusic-list__info-album-title">Lauv</span>
+              <span class="nextmusic-list__info-album-title"
+                >Paris In The Rain</span
+              >
+            </div>
           </div>
-          <div class="nextmusic-list__info-album">
-            <span class="nextmusic-list__info-album-title">Circles</span>
-            <span class="nextmusic-list__info-album-title">Post Malone</span>
+          <div class="nextmusic-list__info-icon">
+            <i class="fas fa-ellipsis-v"></i>
           </div>
         </li>
       </ul>
 
-      <div class="control-box"></div>
+      <div class="list-control-setbox">
+        <div class="list-control-bar">
+          <div class="list-control-bar__text">
+            <span>Lauv</span>
+            <span>Paris in the rain</span>
+          </div>
+          <div class="list-control-bar__icon">
+            <button><i class="fas fa-step-backward fa-lg"></i></button>
+            <button><i class="fas fa-pause fa-lg"></i></button>
+            <button><i class="fas fa-step-forward fa-lg"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--<div class="main"></div>-->
+
+    <div class="main">
+      <div class="status-bar">
+        <a href="#" class="status-bar__icon">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="#" class="status-bar__icon">
+          <i class="fas fa-ellipsis-v"></i>
+        </a>
+      </div>
+
+      <div class="onplay-screen">
+        <img class="onplay-screen__img" src="../img/8.jpeg" />
+        <div class="onplay-screen__text">
+          <span>Paris in the rain</span>
+          <span>Lauv</span>
+        </div>
+      </div>
+
+      <div class="musicprogress-box">
+        <div class="musicprogress-box__time">
+          <span>1:10</span>
+          <span>3:30</span>
+        </div>
+        <div class="musicprogress-box__bar"></div>
+        <div class="musicprogress-box__pointer"></div>
+      </div>
+
+      <div class="music-control-bar">
+        <div class="music-control-bar__icon">
+          <button><i class="fas fa-retweet fa-lg"></i></button>
+          <button><i class="fas fa-step-backward fa-lg"></i></button>
+          <button><i class="fas fa-play-circle fa-4x"></i></button>
+          <button><i class="fas fa-step-forward fa-lg"></i></button>
+          <button><i class="fas fa-random fa-lg"></i></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

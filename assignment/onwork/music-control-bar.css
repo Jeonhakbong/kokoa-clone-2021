@@ -1,0 +1,27 @@
+.music-control-bar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.music-control-bar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px var(--default-space);
+}
+.music-control-bar__icon button {
+  background-color: white;
+}
+.fa-play-circle {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(63, 62, 62, 0.2);
+}
+.fa-retweet,
+.fa-random {
+  color: rgb(213, 213, 213);
+}
+.musicprogress-box__time span {
+  font-size: 10px;
+  color: rgb(139, 136, 136);
+}

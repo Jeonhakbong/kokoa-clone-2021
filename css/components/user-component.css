@@ -29,6 +29,7 @@
 .user-component__avatar--sm {
   width: 60px;
   height: 60px;
+  border-radius: 20px;
 }
 .user-component__title--not-bold {
   font-weight: 400;
@@ -43,4 +44,33 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+.user-component__background {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-component__background span {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+.user-component__background div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 45%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.friends-screen__friend .user-component {
+  margin-bottom: 20px;
+}
+.friends-screen__friend .user-component__column:last-child span {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 15px;
+  background-color: whitesmoke;
 }

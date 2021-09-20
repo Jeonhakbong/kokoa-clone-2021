@@ -1,0 +1,62 @@
+.nextmusic-list-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+}
+
+.nextmusic-list__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px 10px;
+}
+.nextmusic-list__info:nth-child(2) {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(63, 62, 62, 0.1);
+}
+.nextmusic-list__info-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  position: relative;
+}
+
+.nextmusic-list__info-text-img {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.nextmusic-list__info-text-img:nth-child(2) {
+  filter: brightness(0.3);
+}
+.nextmusic-list__info-album {
+  display: flex;
+  flex-direction: column;
+}
+.nextmusic-list__info-album-title {
+  font-size: 15px;
+
+  margin-bottom: 3px;
+}
+.nextmusic-list__info-album-title:first-child {
+  color: rgb(139, 136, 136);
+}
+.nextmusic-list__info-album-title:nth-child(2) {
+  font-size: 18px;
+}
+.nextmusic-list__info-icon {
+  display: flex;
+  align-items: center;
+}
+.nextmusic-list__info-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.fa-play {
+  position: absolute;
+  left: 13px;
+}

@@ -39,9 +39,22 @@ body {
   margin: 30px 10px;
 }
 .playlist-bar__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 0px;
   margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+.playlist-bar__icon:hover {
+  background-color: gainsboro;
+}
+
+.playlist-bar__icon:active {
+  background-color: silver;
 }
 
 #onplay-box {

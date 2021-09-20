@@ -1,0 +1,41 @@
+.list-control-setbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.list-control-bar {
+  display: flex;
+  padding: 15px 15px;
+  color: white;
+  background-color: var(--default-color);
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px rgba(63, 62, 62, 0.1);
+}
+.list-control-bar__text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  font-size: 15px;
+}
+.list-control-bar__text :first-child {
+  color: rgb(139, 136, 136);
+  font-size: 12px;
+}
+.list-control-bar__icon {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.list-control-bar__icon button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--default-color);
+  color: white;
+}
+.list-control-bar__icon button:nth-child(2) {
+  margin: 0px 10px;
+}

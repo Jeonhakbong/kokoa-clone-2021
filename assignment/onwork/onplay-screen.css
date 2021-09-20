@@ -1,0 +1,26 @@
+/*second main*/
+.onplay-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.onplay-screen__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 40px 0px;
+}
+.onplay-screen__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--default-space) 0px;
+}
+.onplay-screen__text span:first-child {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.onplay-screen__text span:last-child {
+  color: rgb(139, 136, 136);
+}
